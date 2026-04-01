@@ -1,0 +1,46 @@
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CLion / CMake
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+
+# Compiled binaries and object files
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.dll
+*.lib
+*.d
+
+# Debug / development artifacts
+*.dSYM/
+.dev/
+
+# Bison and Flex generated files
+*.yy.c
+*.yy.cpp
+*.tab.c
+*.tab.h
+
+# Temporary files
+*.tmp
+*.bak
+*.log

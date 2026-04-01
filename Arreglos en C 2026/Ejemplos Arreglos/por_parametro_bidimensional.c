@@ -3,6 +3,7 @@ dimensiones para despues mostrarlo por pantalla como quedo ordenado. Para eso us
 una funcion que recibe por parametro la matriz de dos dimensiones y la cantidad de filas*/
 
 #include <stdio.h>
+#include <stdlib.h>
  
 void ImprimirMatriz(int m[][3], int filas);
 
