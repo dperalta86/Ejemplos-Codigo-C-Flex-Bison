@@ -59,7 +59,33 @@ void MuestraArreglo(int valores[], int tamanio)
 {
  int i=0;
  
+ // Primera línea: borde superior
+ printf("+-----");
+ for (i=1; i<tamanio; ++i)
+    printf("+-----");
+ printf("+\n");
+ 
+ // Segunda línea: valores
+ printf("|");
  for (i=0; i<tamanio; ++i)
-      printf("%d\t",valores[i]);
+    printf(" %3d |", valores[i]);
  printf("\n");
+ 
+ // Tercera línea: borde inferior
+ printf("+-----");
+ for (i=1; i<tamanio; ++i)
+    printf("+-----");
+ printf("+\n");
+ 
+ // Cuarta línea: índices
+ printf("|");
+ for (i=0; i<tamanio; ++i)
+    printf(" %3d |", i);
+ printf("\n");
+ 
+ // Quinta línea: borde final
+ printf("+-----");
+ for (i=1; i<tamanio; ++i)
+    printf("+-----");
+ printf("+\n");
 }

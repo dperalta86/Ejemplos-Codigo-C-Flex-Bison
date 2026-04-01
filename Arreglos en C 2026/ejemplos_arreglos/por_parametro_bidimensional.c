@@ -26,21 +26,29 @@ int por_parametro_bidimensional()
  printf("Matriz\n");
  ImprimirMatriz(matriz, 3);
  
- system("pause");
+  #ifdef _WIN32
+  system("pause");
+  #endif
 
  return 0;
 }
 
 void ImprimirMatriz(int m[][3], int filas)
 {
- int i=0,j=0;
+ int i=0, j=0;
+ 
+ // Print top border
+ printf("+-----+-----+-----+\n");
  
  for (i=0; i<filas; ++i)
-     {
-      for (j=0; j<3; ++j)
-          {
-           printf("%d ",m[i][j]);
-          }
-      printf("\n");
-     }
+    {
+     printf("|");
+     for (j=0; j<3; ++j)
+        {
+         printf(" %3d |", m[i][j]);
+        }
+     printf("\n");
+     // Print horizontal separator
+     printf("+-----+-----+-----+\n");
+    }
 }
